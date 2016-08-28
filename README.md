@@ -39,7 +39,7 @@ The nodes table has columns for `id`, `title`, `language_id`, `completed`, and `
 All styling in Word Mine is done with CSS.
 
 <h2> Next Steps </h2>
-Some features that I plan on adding to Word Mine are:
+Some features that I plan on adding to Word Mine:
   * Pictures for user profiles
   * Option to create custom node, using Google API to translate words
   * Be able to unlock the next node by answering all questions correctly in the current node

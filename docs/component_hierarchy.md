@@ -1,29 +1,34 @@
-<h3> AuthFormContainer
+<h3> AuthFormContainer </h3>
+
   * AuthForm
 
-<h3> ChooseLanguage
+<h3> ChooseLanguage </h3>
+
   * LanguageChoice
   * NextButton
 
-<h3> NodeContainer
+<h3> NodeContainer </h3>
+
   * ProgressBarContainer
     * ProgressPiece
   * ForeignWord
   * GuessField
   * CheckButton
 
-<h3> ProfileContainer
+<h3> ProfileContainer </h3>
+
   * LanguageIndex
     * LanguagePercentage
     * StudyButton
 
-<h3> TreeContainer
+<h3> TreeContainer </h3>
+
   * LanguageHeader
   * Stats
   * Nodes
     * Node
 
-<h3> NavBar
+<h3> NavBar </h3>
 
 
 
