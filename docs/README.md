@@ -41,7 +41,7 @@
   * push to Heroku
   * review phase 1
 
-<h4> **Phase 2**: Frontend Authentication (1 day) </4>
+<h4> **Phase 2**: Frontend Authentication (1 day) </h4>
   **Objective**: Have a functioning sign-in/sign-up structure
   * password protection
   * session
