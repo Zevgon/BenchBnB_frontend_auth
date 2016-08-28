@@ -17,8 +17,8 @@
   * [Wireframes](wireframes/)
 
 # Implementation Timeframe
-  <h4> **Phase 1**: Setup and Authentication (2 days) </h4>
-  **Objective**: Create a working sign in/sign out structure and put some data in the database
+<h4> **Phase 1**: Setup (1 day) </h4>
+  **Objective**: Have a functioning app with a styled splash page
   * Rails New (postgresql)
   * add gems (better_errors, binding_of_caller, annotate, table_print, pry-rails, byebug)
   * webpack.config.js
@@ -37,27 +37,77 @@
   * configure server routes
   * set up frontend folder
   * seed database with at least one language, two nodes, and 15 words in each node for testing
-  * style sign in/sign up page
+  * style splash page
+  * push to Heroku
   * review phase 1
-  * **redux frontend authentication**
 
-  <h4> **Phase 2**: Selecting a language to learn (1 day) </h4>
+<h4> **Phase 2**: Frontend Authentication (1 day) </4>
+  **Objective**: Have a functioning sign-in/sign-up structure
+  * password protection
+  * session
+    * SessionMiddleware
+    * SessionReducer
+  * edit application layout for user persistence
+
+<h4> **Phase 3**: Selecting languages (1 day) </h4>
   **Objective**: Allow users to check boxes indicating which languages they want to learn and have the state update accordingly
   * ChooseLanguage component
-    * LanguageChoices component
+    * LanguageChoice components
+      * store choices in their own states
   * selector to get list of language names
   * LanguageMiddleware
-    * intercepts dispatch to requestLanguages and sends back a list of the language names
+    * intercepts dispatch to requestAllLanguages and sends back a list of the language names
   * LanguageReducer
     * takes a receiveLanguages dispatch and updates the state accordingly
   * create actions for requesting and receiving languages
-  * send requests to API and send JSON back
   * NextButton sends user to tree page for first language in state
   * style choose language page
   * review phase 2
 
-  <h4> **Phase 2**: Tree page, part 1 (1 day) </h4>
-  **Objective**: Get tree page to display
-  * create tree component
+<h4> **Phase 4**: Tree page and nav bar (1 day) </h4>
+  **Objective**: Get tree page to display, be able to click on nodes and go to node page, and have nav bar
+  * Tree component
+    * triggers fetchNodes request in componentWillMount
+  * LanguageHeader subcomponent
+  * Node subcomponents
+  * set onClick on all nodes to send user to proper page (regardless of unlocked status for now)
+    * dispatches fetchNode request
+    * put placeholder content for node page
+  * NodeMiddleware
+    * catches requestNode and requestNodes dispatches
+  * NodeReducer
+    * catches receiveNode and receiveNodes dispatches
   * style tree page
-  * style nav bar
+  * create and style nav bar
+    * Profile onClick sends user to profile page
+    * LogOut onClick logs out user
+  * review phase 2
+
+<h4> **Phase 5**: Profile (1 day) </h4>
+  **Objective**: Display languages that the user is learning and have a button next to each one that sends the user to the corresponding language tree
+  * ProfileContainer
+    * LanguageIndex component
+      * triggers fetchUserLanguages in componentWillMount
+      * onClick of items dispatches fetchLanguage request
+  * style profile page
+  * review phase 4
+
+<h4> **Phase 6**: Node page (1 day) </h4>
+  **Objective**: Have a styled node page
+  * NodeContainer
+    * ProgressBarContainer
+      * ProgressPiece component
+    * ForeignWord component
+    * GuessField component
+  * style node page
+  * review phase 6
+  * revisit previous phases and clean up
+
+<h4> **Phase 7**: Finishing touches (3 days) </h4>
+  **Objective**: Have a bug-free, visually pleasing web application!
+  * Fix any remaining bugs
+  * Touch up styling
+  * Add bonus features
+    * Be able to progress through questions in nodes
+    * Be able to create custom nodes
+    * Use Google API to translate custom content

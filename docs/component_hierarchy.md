@@ -2,7 +2,7 @@
   * AuthForm
 
 <h3> ChooseLanguage
-  * LanguageChoices
+  * LanguageChoice
   * NextButton
 
 <h3> NodeContainer
@@ -13,7 +13,7 @@
   * CheckButton
 
 <h3> ProfileContainer
-  * LanguageListContainer
+  * LanguageIndex
     * LanguagePercentage
     * StudyButton
 
@@ -23,6 +23,7 @@
   * Nodes
     * Node
 
+<h3> NavBar
 
 
 
@@ -31,6 +32,6 @@
 | :------------- | :------------- |
 | '/sign-up-sign-in' | AuthFormContainer |
 | '/users/:userId/choose' | ChooseLanguage |
-| '/users/:userId/language/:languageId/node/:nodeId' | NodeContainer |
+| '/users/:userId/languages/:languageId/node/:nodeId' | NodeContainer |
 | '/users/:userId/profile' | ProfileContainer |
-| '/users/:userId/language/:languageId' | TreeContainer |
+| '/users/:userId/languages/:languageId' | TreeContainer |

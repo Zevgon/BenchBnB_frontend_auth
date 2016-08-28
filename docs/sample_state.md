@@ -1,3 +1,4 @@
+```json
 {
   current_user: {
     id: 1,
@@ -19,23 +20,23 @@
       languageId: 2
       completed: false,
       unlocked: true
-      words: {
-        1: {
+      words: [
+        {
           nodeId: 6,
           word: 'ein',
           translation: ['one', 'a', 'an'],
           answeredCorrectly; false
         },
-        2: {
+        {
           nodeId: 6,
           word: 'ich',
           translation: ['I'],
           answeredCorrectly: true
         },
-        3: etc.
-      }
+        etc. (15 total word object in array)
+      ]
     },
-    2: etc.
+    2: etc. (20 nodes in object)
   },
   forms: {
     signUp: {
@@ -46,3 +47,4 @@
     }
   }
 }
+```
