@@ -2,7 +2,7 @@
 {
   current_user: {
     id: 1,
-    username: "biff"
+    username: "Noam"
   },
   languages: {
     1: {

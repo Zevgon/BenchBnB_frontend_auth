@@ -50,6 +50,7 @@
     * SessionMiddleware
     * SessionReducer
   * edit application layout for user persistence
+  * review phase 2
 
 ### Phase 3: Selecting languages (1 day)
   **Objective**: Allow users to check boxes indicating which languages they want to learn and have the state update accordingly
@@ -64,7 +65,7 @@
   * create actions for requesting and receiving languages
   * NextButton sends user to profile page
   * style choose language page
-  * review phase 2
+  * review phase 3
 
 ### Phase 4: Tree page and nav bar (1 day)
   **Objective**: Get tree page to display, be able to click on nodes and go to node page, and have nav bar
@@ -83,7 +84,7 @@
   * create and style nav bar
     * Profile onClick sends user to profile page
     * LogOut onClick logs out user, renders splash page
-  * review phase 2
+  * review phase 4
 
 ### Phase 5: Profile (1 day)
   **Objective**: Display languages that the user is learning and have a button next to each one that sends the user to the corresponding language tree
@@ -92,7 +93,7 @@
       * triggers fetchUserLanguages in componentWillMount
       * onClick of items dispatches fetchLanguage request
   * style profile page
-  * review phase 4
+  * review phase 5
 
 ### Phase 6: Node page (1 day)
   **Objective**: Have a styled node page
