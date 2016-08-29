@@ -1,5 +1,7 @@
-# Minimum Viable Product
-  Word Mine is a web application inspired by Duolingo. Users can choose a language and learn the most common words in that language.
+# Word Mine
+
+## Minimum Viable Product
+  Word Mine is a web application inspired by Duolingo. Users can choose languages to learn and learn the most common words in those languages.
 
   * Hosting on Heroku
   * User Profiles
@@ -8,7 +10,7 @@
   * New account creation, user/guest login
   * Production README
 
-# Design Docs
+## Design Docs
   * [Api Endpoints](api_endpoints.md)
   * [React Components](component_hierarchy.md)
   * [Redux Structure](redux_structure.md)
@@ -16,8 +18,8 @@
   * [Schema](schema.md)
   * [Wireframes](wireframes/)
 
-# Implementation Timeframe
-<h4> Phase 1: Setup (1 day) </h4>
+## Implementation Timeframe
+### Phase 1: Setup (1 day)
   **Objective**: Have a functioning app with a styled splash page
   * Rails New (postgresql)
   * add gems (better_errors, binding_of_caller, annotate, table_print, pry-rails, byebug)
@@ -41,7 +43,7 @@
   * push to Heroku
   * review phase 1
 
-<h4> Phase 2: Frontend Authentication (1 day) </h4>
+### Phase 2: Frontend Authentication (1 day)
   **Objective**: Have a functioning sign-in/sign-up structure
   * password protection
   * session
@@ -49,7 +51,7 @@
     * SessionReducer
   * edit application layout for user persistence
 
-<h4> Phase 3: Selecting languages (1 day) </h4>
+### Phase 3: Selecting languages (1 day)
   **Objective**: Allow users to check boxes indicating which languages they want to learn and have the state update accordingly
   * ChooseLanguage component
     * LanguageChoice components
@@ -64,7 +66,7 @@
   * style choose language page
   * review phase 2
 
-<h4> Phase 4: Tree page and nav bar (1 day) </h4>
+### Phase 4: Tree page and nav bar (1 day)
   **Objective**: Get tree page to display, be able to click on nodes and go to node page, and have nav bar
   * Tree component
     * triggers fetchNodes request in componentWillMount
@@ -83,7 +85,7 @@
     * LogOut onClick logs out user, renders splash page
   * review phase 2
 
-<h4> Phase 5: Profile (1 day) </h4>
+### Phase 5: Profile (1 day)
   **Objective**: Display languages that the user is learning and have a button next to each one that sends the user to the corresponding language tree
   * ProfileContainer
     * LanguageIndex component
@@ -92,7 +94,7 @@
   * style profile page
   * review phase 4
 
-<h4> Phase 6: Node page (1 day) </h4>
+### Phase 6: Node page (1 day)
   **Objective**: Have a styled node page
   * NodeContainer
     * ProgressBarContainer
@@ -103,7 +105,7 @@
   * review phase 6
   * revisit previous phases and clean up
 
-<h4> Phase 7: Finishing touches (3 days) </h4>
+### Phase 7: Finishing touches (3 days)
   **Objective**: Have a bug-free, visually pleasing web application!
   * Fix any remaining bugs
   * Touch up styling
