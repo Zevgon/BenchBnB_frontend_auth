@@ -10,12 +10,12 @@
     * `POST /api/sessions`
     * `GET /api/sessions`
     * `DESTROY /api/sessions`
-  * Languages
-    * `GET /api/languages`
-    * `GET /api/users/:userId/languages`
-    * `GET /api/users/:userId/languages/:languageId`
+  * Trees
+    * `GET /api/trees`
+    * `GET /api/users/:userId/trees`
+    * `GET /api/users/:userId/trees/:treeId`
   * Nodes
-    * `GET /api/languages/:languageId/nodes`
+    * `GET /api/trees/:treeId/nodes`
       accepts node[language_id] as a param
-    * `GET /api/languages/:languageId/nodes/:nodeId`
+    * `GET /api/trees/:treeId/nodes/:nodeId`
       accepts node[language_id] and node[id] as params

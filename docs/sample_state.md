@@ -4,7 +4,7 @@
     id: 1,
     username: "Noam"
   },
-  languages: {
+  trees: {
     1: {
       id: 2,
       name: 'German',
@@ -17,7 +17,7 @@
   nodes: {
     1: {
       id: 6,
-      languageId: 2
+      treeId: 2
       completed: false,
       unlocked: true
       words: [

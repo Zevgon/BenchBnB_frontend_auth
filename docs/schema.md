@@ -2,24 +2,24 @@
 
 | column    | data type | details |
 | :------------- | :------------- | :------------- |
-| id | integer | null: false |
-| username | string | null: false |
-| password_digest | string | null: false |
-| session_token | string | null: false |
+| id             | integer        | null: false    |
+| username       | string         | null: false    |
+| password_digest| string         | null: false    |
+| session_token  | string         | null: false    |
 
-<h2> Languages </h2>
+<h2> Trees </h2>
 
 | column    | data type | details |
 | :------------- | :------------- | :------------- |
 | id | integer | null: false |
 | name | string | null: false |
 
-<h2> UsersLanguages </h2>
+<h2> UsersTrees </h2>
 
 | column    | data type | details |
 | :------------- | :------------- | :------------- |
 | user_id | integer | null: false |
-| language_id | integer | null: false |
+| tree_id | integer | null: false |
 
 <h2> Nodes </h2>
 
@@ -27,7 +27,7 @@
 | :------------- | :------------- | :------------- |
 | id | integer | null: false |
 | title | string | null: false |
-| language_id | integer | null: false, indexed |
+| tree_id | integer | null: false, indexed |
 | completed | boolean | null: false, default: false |
 | unlocked | boolean | null: false, default: false |
 

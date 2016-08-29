@@ -25,47 +25,47 @@
     * invoked as callback from request
     * the SessionReducer removes the current_user from the state
 
-<h2> Language Cycles </h2>
-<h4> Language API requests </h4>
-  * fetchAllLanguages
-    * invoked from ChooseLanguage onSubmit
-    * GET /api/languages is called
-    * callback set as receiveAllLanguages
-  * fetchUserLanguages
-    * invoked from profile's LanguageIndex on componentWillMount
-    * GET /api/users/:userId/languages is called
-    * callback set as receiveUserLanguages
-  * fetchLanguage
+<h2> Tree Cycles </h2>
+<h4> Tree API requests </h4>
+  * fetchAllTrees
+    * invoked from ChooseTree onSubmit
+    * GET /api/trees is called
+    * callback set as receiveAllTrees
+  * fetchUserTrees
+    * invoked from profile's TreeIndex on componentWillMount
+    * GET /api/users/:userId/trees is called
+    * callback set as receiveUserTrees
+  * fetchTrees
     * invoked from StudyButton in profile
-    * GET /api/users/:userId/languages/:languageId is called
-    * callback set as receiveLanguage
+    * GET /api/users/:userId/trees/:treeId is called
+    * callback set as receiveTree
 
-<h4> Language API responses </h4>
-  * receiveAllLanguages
+<h4> Tree API responses </h4>
+  * receiveAllTrees
     * invoked as callback from request
-    * the LanguageReducer puts selected languages in the state
-  * receiveUserLanguages
+    * the TreeReducer puts selected trees in the state
+  * receiveUserTrees
     * invoked as callback from request
-    * the LanguageReducer puts selected languages in the state
-  * receiveLanguage
+    * the TreeReducer puts selected trees in the state
+  * receiveTree
     * invoked as callback from request
-    * LanguageReducer puts selected language in the state
+    * TreeReducer puts selected tree in the state
 
 <h2> Node Cycles </h2>
 <h4> Node API requests </h4>
   * fetchNodes
     * invoked from Nodes in componentDidMount
-    * GET /api/language/:languageId/nodes is called
+    * GET /api/tree/:treeId/nodes is called
     * callback set as receiveNodes
   * fetchNode
     * invoked from Node in onClick
-    * GET /api/language/:languageId/node/:nodeId is called
+    * GET /api/tree/:treeId/node/:nodeId is called
     * callback set as receiveNode
 
 <h4> NodeAPI responses </h4>
   * receiveNodes
     * invoked as callback from request
-    * the NodeReducer sets the language.nodes portion of the tree
+    * the NodeReducer sets the tree.nodes portion of the tree
   * receiveNode
     * invoked as callback from request
-    * the NodeReducer puts the selected node in the language.nodes portion of the tree
+    * the NodeReducer puts the selected node in the tree.nodes portion of the tree
